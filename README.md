@@ -1,6 +1,7 @@
 # A tool to let user modify any exposed environment variables in Laravel Nova
 
 When this tool is added to Nova, you can modify the app environment variables with a config file indicating exposed environment variables.
+
 ![screenshot of the backup tool](https://github.com/hassabdo/env-editor/raw/master/Screenshot.png)
 
 ## Installation
