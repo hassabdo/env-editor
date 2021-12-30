@@ -9,6 +9,11 @@ You can install the package in to a Laravel app that uses [Nova](https://nova.la
 ```bash
 composer require hassen/env-editor
 ```
+You need to publish the configuration file to set exposed variables via : 
+
+```bash
+php artisan vendor:publish --tag=env-editor-config
+```
 
 Next up, you must register the tool with Nova. This is typically done in the `tools` method of the `NovaServiceProvider`.
 
