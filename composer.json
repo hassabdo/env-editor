@@ -1,0 +1,56 @@
+{
+    "name": "hassen/env-editor",
+    "description": "A tool for Laravel Nova to allow users to edit their profile data",
+    "keywords": [
+        "laravel",
+        "nova",
+        "tool",
+        "profile"
+    ],
+    "version": "1.1",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../nova"
+        }
+    ],
+    "homepage": "https://github.com/hassabdo/env-editor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hassen Abeljaoued",
+            "email": "abd.hassen@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.6",
+        "phpunit/phpunit": "7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hassen\\EnvEditor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hassen\\EnvEditor\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hassen\\EnvEditor\\EnvEditorServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
