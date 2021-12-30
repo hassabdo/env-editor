@@ -63,7 +63,18 @@ public function tools()
     ];
 }
 ```
+The package can be translated to different languages. You need to add the following to lang.json in the app lang folder:
 
+```json
+###
+    "Your env file has been saved!": "Vos variables d'environnement ont été enregistré!",
+    "Edit Environment File": "Modifier les variables d'environnement",
+    "Caution": "Attention",
+    "Save File": "Enregistrer",
+    "Be careful when modifying, it may affect existing integrations.": "Soyez prudent lors de la modification, cela peut affecter les intégrations existantes.",
+    "ENV Settings": "Variables d'environnement"
+
+```
 ## Usage
 
 Click on the "ENV Settings" menu item in your Nova app to see the tool provided by this package.
