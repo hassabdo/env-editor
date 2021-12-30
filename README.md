@@ -66,7 +66,7 @@ public function tools()
 The package can be translated to different languages. You need to add the following to lang.json in the app lang folder:
 
 ```json
-###
+
     "Your env file has been saved!": "Vos variables d'environnement ont été enregistré!",
     "Edit Environment File": "Modifier les variables d'environnement",
     "Caution": "Attention",
