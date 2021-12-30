@@ -1,8 +1,8 @@
 # Changelog
 
-All notable changes to `nova-profile-tool` will be documented in this file
+All notable changes to `env-editor` will be documented in this file
 
-## 1.0.0 - 2018-08-26
+## 1.0.0 - 2021-12-30
 
 - initial release
-- Users can update their name and e-mailaddress
+- A Nova User can modify exposed enviroment variables

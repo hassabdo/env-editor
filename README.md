@@ -1,20 +1,13 @@
-# A tool to let user's update their profile in Laravel Nova
+# A tool to let user modify any exposed environment variables in Laravel Nova
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/runlinenl/nova-profile-tool.svg?style=flat-square)](https://packagist.org/packages/runlinenl/nova-profile-tool)
-[![Total Downloads](https://img.shields.io/packagist/dt/runlinenl/nova-profile-tool.svg?style=flat-square)](https://packagist.org/packages/runlinenl/nova-profile-tool)
-
-
-When this tool is added to Nova, you can let users update their profile data without giving them access to the full
-User resource under 'Resources'.
-
-![screenshot of the backup tool](https://github.com/runlinenl/nova-profile-tool/raw/master/screenshot.png)
+When this tool is added to Nova, you can modify the app environment variables with a config file indicating exposed environment variables.
 
 ## Installation
 
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require runlinenl/nova-profile-tool
+composer require hassen/env-editor
 ```
 
 Next up, you must register the tool with Nova. This is typically done in the `tools` method of the `NovaServiceProvider`.
@@ -28,14 +21,14 @@ public function tools()
 {
     return [
         // ...
-        new \Hassen\ProfileTool\ProfileTool,
+        new \Hassen\EnvEditor\EnvEditorTool,
     ];
 }
 ```
 
 ## Usage
 
-Click on the "Profile" menu item in your Nova app to see the tool provided by this package.
+Click on the "ENV Settings" menu item in your Nova app to see the tool provided by this package.
 
 ### Testing
 
@@ -53,12 +46,12 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email patrick@runline.nl instead of using the issue tracker.
+If you discover any security related issues, please email abd.hassen@gmail.com instead of using the issue tracker.
 
 ## Credits
 
-- [Patrick Bergman](https://github.com/patrickbergman)
+- [HASSEN ABDELJAOUED](https://github.com/hassabdo)
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+Not yet received
