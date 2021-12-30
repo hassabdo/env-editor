@@ -3,12 +3,10 @@
 When this tool is added to Nova, you can modify the app environment variables with a config file indicating exposed environment variables.
 
 ## Installation
+The package is not available in packagist library.
 
-You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
+You can install the package manually in a Laravel app that uses [Nova](https://nova.laravel.com) by dowloading this repostory and adding it to dependicies in your composer.json file.
 
-```bash
-composer require hassen/env-editor
-```
 You need to publish the configuration file to set exposed variables via : 
 
 ```bash
