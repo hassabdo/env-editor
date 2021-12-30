@@ -12,7 +12,24 @@ You need to publish the configuration file to set exposed variables via :
 ```bash
 php artisan vendor:publish --tag=env-editor-config
 ```
+The config must have the following structure :
+- name : The name of the variable as existing in the .env file.
+- label : The name of the variable as showen in the form.
 
+```php
+    return [
+
+        /*
+        |--------------------------------------------------------------------------
+        | Exposed Env variables
+        |--------------------------------------------------------------------------
+         */
+
+        'exposed_variables' => [
+            # name => label
+        ],
+    ];
+```
 Next up, you must register the tool with Nova. This is typically done in the `tools` method of the `NovaServiceProvider`.
 
 ```php
@@ -25,6 +42,24 @@ public function tools()
     return [
         // ...
         new \Hassen\EnvEditor\EnvEditorTool,
+    ];
+}
+```
+
+You can also restrict the usage of this tool to specific users.
+
+```php
+// in app/Providers/NovaServiceProvider.php
+
+// ...
+
+public function tools()
+{
+    return [
+        // ...
+        (new \Hassen\EnvEditor\EnvEditorTool)->canSee(function ($request) {
+            return $request->user()->isSuperAdmin();
+        }),
     ];
 }
 ```
