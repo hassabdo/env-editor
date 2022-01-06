@@ -5,7 +5,7 @@ When this tool is added to Nova, you can modify the app environment variables wi
 ![screenshot of the backup tool](https://github.com/hassabdo/env-editor/raw/master/Screenshot.png)
 
 ## Installation
-The package is not available in packagist library.
+The package is not available in packagist library because it is still on test.
 
 You can install the package manually in a Laravel app that uses [Nova](https://nova.laravel.com) by dowloading this repostory and adding it to dependencies in your composer.json file.
 
